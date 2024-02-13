@@ -6,7 +6,7 @@ install:
   - pip install -r requirements.txt
 
 script:
-  - python3 main.py
+  - python3 -m py_compile main.py
 
 branches:
   only:

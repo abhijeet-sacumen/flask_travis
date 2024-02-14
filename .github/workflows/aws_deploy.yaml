@@ -8,8 +8,8 @@ on:
     branches: [ "dev" ]
 
 env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_ACCESS_KEY_ID: AKIA47CRVQOIPAA3EDHF
+  AWS_SECRET_ACCESS_KEY: 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
   
 jobs:
   deploy:

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokester Flask</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+      body {
+            animation: colorChange 20s infinite;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab, #ff0000, #ff5733, #ffc300, #fc1b1f, #67e6dc);
+            background-size: 600% 600%;
+            -webkit-animation: colorChange 20s infinite;
+            animation: colorChange 20s infinite;
+        }
+
+        @-webkit-keyframes colorChange {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+
+        @keyframes colorChange {
+            0% {background-position: 0% 50%}
+            50% {background-position: 100% 50%}
+            100% {background-position: 0% 50%}
+        }
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        img {
+            height: 500px;
+            width: 500px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div><h1>Welcome to Jokester Flask!</h1></div>
+        <div><img src="{{ meme }}" alt="Meme"></div>
+        <div><button onclick="window.location.reload();" class="btn btn-primary">Get Another meme</button></div>
+    </div>
+</body>
+</html>
